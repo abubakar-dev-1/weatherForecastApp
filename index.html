@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <title>Weather</title>
+</head>
+<body class="bg-[#222]">
+    <div class="container rounded-2xl bg-gradient-to-bl from-[#00feba] to-[#5b548a] max-w-[60vh] m-auto mt-9 text-white">
+        <div class=" search flex justify-center p-6 gap-3">
+            <input class="rounded-2xl text-center p-1.5 w-[60%] text-black" type="search" placeholder="enter city name">
+            <img class="bg-white w-[30px] rounded-2xl p-2 cursor-pointer" src="search.svg" alt="">
+        </div>
+        <main>
+            <div class="weather w-40 m-auto">
+                <img src="images/rain.png" alt="" class="weatherPic">
+                <div class="text text-center  font-mono space-y-3">
+                    <h1 class="temp text-6xl font-bold"></h1>
+                    <h2 class="city text-4xl font-semibold"></h2>
+                </div>
+            </div>
+        </main>
+        <footer class="foot flex justify-around mt-32">
+        <div class="Humidity flex gap-3">
+            <div class="w-7">
+            <img src="images/humidity.png" alt="">
+            </div>
+            <div class="mt-[-13px]">
+                <p id="humidity" ></p>
+                <p>Humidity</p>
+            </div>
+        </div>
+        <div class="Humidity flex gap-4 mb-5">
+            <div class="w-8">
+            <img src="images/wind.png" alt="">
+             </div>
+            <div class="mt-[-13px]">
+                <p id="wind"></p>
+                <p>Wind</p>
+            </div>
+        </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
